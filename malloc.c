@@ -1,3 +1,5 @@
+#include <unistd.h>
+#include <string.h>
 #include "malloc.h"
 
 #define HEADER_SIZE sizeof(struct list_t)
@@ -61,7 +63,7 @@ void* malloc1(size_t size) {
 	if(base) {
 
 		list_t* last = base;
-		block = find_block(base, size);
+		block = find_block(&base, size);
 		if(!block) {
 			block = allocate_block(last, size);
 			if(!block) {
@@ -71,7 +73,7 @@ void* malloc1(size_t size) {
 	
 	} else {
 
-		list_t* block = allocate_block(NULL, size);
+		block = allocate_block(NULL, size);
 		if(!block) {
 			return NULL;
 		}
@@ -90,7 +92,7 @@ list_t* allocate_block(list_t* last, size_t size) {
 
 	list_t* block = sbrk(0);
 	
-	if(sbrk(HEADER_SIZE + size) == (void*) -1) {
+	if(sbrk(HEADER_SIZE + size) == (void*) - 1) {
 		return NULL;
 	}
 
