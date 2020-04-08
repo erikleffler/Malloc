@@ -1,8 +1,10 @@
 #include <unistd.h>
+#include <stdio.h>
 #include <string.h>
 #include "malloc.h"
 
 #define HEADER_SIZE sizeof(struct list_t)
+#define align4(x) (((((x)-1)>>2)<<2) + 4)
 
 typedef struct list_t list_t;
 
@@ -18,7 +20,9 @@ struct list_t {
 
 list_t* base = NULL;
 
-void free1(void* ptr) {
+void free(void* ptr) {
+	printf("FREE: %p\n", ptr);
+	fflush(stdout);
 
 	if(!ptr) {
 		return;
@@ -29,44 +33,60 @@ void free1(void* ptr) {
 	block->free = 1;
 }
 
-void* realloc1(void* ptr, size_t size) {
+void* realloc(void* ptr, size_t size) {
+	printf("REALLOC: %p %d \n", ptr, (int)size);
+	fflush(stdout);
 
 	if(!ptr) {
-		return malloc1(size);
+		return malloc(size);
 	}
 
 	list_t* block = (list_t*)ptr - 1;
 	
 	if(size > block->size) {
 
-		list_t* new_block = malloc1(size);
+		list_t* new_block = malloc(size);
 		if(!new_block) {
 			return NULL;
 		}
 
 		memcpy((new_block + 1), ptr, block->size);
-		free1(ptr);
+		free(ptr);
 		return (new_block + 1);
 	}
+	return ptr;
 
 }
 
-void* calloc1(size_t num_elements, size_t element_size) {
-	void* ptr = malloc1(num_elements * element_size);
+void* calloc(size_t num_elements, size_t element_size) {
+	printf("CALLOC: %d %d \n", (int)num_elements, (int)element_size);
+	fflush(stdout);
+	void* ptr = malloc(num_elements * element_size);
 	memset(ptr, 0, num_elements * element_size);
 	return ptr;
 }
 
-void* malloc1(size_t size) {
+void* malloc(size_t size) {
+
+	size = align4(size);
+	printf("size: %d\n", HEADER_SIZE);
+	printf("MALLOC: requested size: %d \n", (int)size);
+	fflush(stdout);
 
 	list_t* block;
 	if(base) {
 
 		list_t* last = base;
 		block = find_block(&base, size);
+		printf("MALLOC: found block: %p\n", block);
 		if(!block) {
 			block = allocate_block(last, size);
+			printf("MALLOC: allocated block: %p\n", block);
 			if(!block) {
+
+
+				printf("MALLOC: returning null w base\n");
+				fflush(stdout);
 				return NULL;
 			}
 		}
@@ -74,13 +94,18 @@ void* malloc1(size_t size) {
 	} else {
 
 		block = allocate_block(NULL, size);
+		printf("MALLOC: no base, allocated block: %p\n", block);
 		if(!block) {
+			printf("MALLOC: returning null no base\n");
+			fflush(stdout);
 			return NULL;
 		}
 		base = block;
 	}
 
 	block->free = 0;
+	printf("MALLOC: returning block: %p\n", block);
+	fflush(stdout);
 
 	return (block + 1);
 }
@@ -96,11 +121,14 @@ list_t* allocate_block(list_t* last, size_t size) {
 		return NULL;
 	}
 
+	printf("ALLOCATE_BLOCK: allocated block: %p\n", block);
 	block->size = size;
+	printf("ALLOCATE_BLOCK: allocated block size: %d\n", (int)block->size);
 	block->next = NULL;
 
 	if(last) {
 		last->next = block;
+		printf("ALLOCATE_BLOCK: last\n");
 	}
 
 	return block;
