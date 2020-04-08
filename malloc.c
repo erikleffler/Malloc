@@ -13,7 +13,6 @@ list_t* find_block(list_t** last, size_t size);
 
 struct list_t {
 	list_t* next;
-	//list_t* prev;
 	size_t size; 
 	int free;
 };
@@ -22,56 +21,60 @@ list_t* base = NULL;
 
 void free(void* ptr) {
 	printf("FREE: %p\n", ptr);
-	fflush(stdout);
 
 	if(!ptr) {
 		return;
 	}
 
-	list_t* block = (list_t*)ptr - 1;
+	list_t* block = ((list_t*)ptr - 1);
+	printf("FREE: block %p\n", block);
 
 	block->free = 1;
+	fflush(stdout);
+	return;
 }
 
 void* realloc(void* ptr, size_t size) {
 	printf("REALLOC: %p %d \n", ptr, (int)size);
-	fflush(stdout);
 
 	if(!ptr) {
+		fflush(stdout);
 		return malloc(size);
 	}
 
-	list_t* block = (list_t*)ptr - 1;
+	list_t* block = ((list_t*)ptr - 1);
 	
 	if(size > block->size) {
 
-		list_t* new_block = malloc(size);
-		if(!new_block) {
+		list_t* new_ptr = malloc(size);
+		if(!new_ptr) {
+			fflush(stdout);
 			return NULL;
 		}
 
-		memcpy((new_block + 1), ptr, block->size);
+		memcpy(new_ptr, ptr, block->size);
 		free(ptr);
-		return (new_block + 1);
+		fflush(stdout);
+		return new_ptr;
 	}
+	fflush(stdout);
 	return ptr;
 
 }
 
 void* calloc(size_t num_elements, size_t element_size) {
+	size_t size = align4(num_elements * element_size);
 	printf("CALLOC: %d %d \n", (int)num_elements, (int)element_size);
+	void* ptr = malloc(size);
+	memset(ptr, 0, size);
 	fflush(stdout);
-	void* ptr = malloc(num_elements * element_size);
-	memset(ptr, 0, num_elements * element_size);
 	return ptr;
 }
 
 void* malloc(size_t size) {
 
 	size = align4(size);
-	printf("size: %d\n", HEADER_SIZE);
 	printf("MALLOC: requested size: %d \n", (int)size);
-	fflush(stdout);
 
 	list_t* block;
 	if(base) {
@@ -104,7 +107,7 @@ void* malloc(size_t size) {
 	}
 
 	block->free = 0;
-	printf("MALLOC: returning block: %p\n", block);
+	printf("MALLOC: returning ptr: %p\n", (block + 1));
 	fflush(stdout);
 
 	return (block + 1);
@@ -117,8 +120,15 @@ list_t* allocate_block(list_t* last, size_t size) {
 
 	list_t* block = sbrk(0);
 	
-	if(sbrk(HEADER_SIZE + size) == (void*) - 1) {
+	list_t* req = sbrk(HEADER_SIZE + size);
+	if(req == (void*) - 1) {
+		fflush(stdout);
 		return NULL;
+	}
+	if(req != block) {
+		printf("NOOOO: %p %p \n", req, block);
+		fflush(stdout);
+		exit(1);
 	}
 
 	printf("ALLOCATE_BLOCK: allocated block: %p\n", block);
@@ -130,6 +140,9 @@ list_t* allocate_block(list_t* last, size_t size) {
 		last->next = block;
 		printf("ALLOCATE_BLOCK: last\n");
 	}
+
+	printf("ALLOCATE_BLOCK: current brk: %p\n", sbrk(0));
+	fflush(stdout);
 
 	return block;
 }
