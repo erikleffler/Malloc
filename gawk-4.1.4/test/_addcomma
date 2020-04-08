@@ -1,0 +1,1560 @@
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e04000
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e04019
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e04033
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e0404c
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e04065
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e0407e
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e04097
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e040b0
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e040c9
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e040e2
+MALLOC: requested size: 8800 
+MALLOC: returning block: 0x105e040fb
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e06373
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0638d
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e063ad
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e063ce
+MALLOC: requested size: 4800 
+MALLOC: returning block: 0x105e0644e
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e07726
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e07745
+MALLOC: requested size: 464 
+MALLOC: returning block: 0x105e07765
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e0794d
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e07985
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e079a5
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e079c0
+MALLOC: requested size: 48 
+MALLOC: returning block: 0x105e079e5
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e07a2d
+MALLOC: requested size: 15 
+MALLOC: returning block: 0x105e07a48
+MALLOC: requested size: 280 
+MALLOC: returning block: 0x105e07a6f
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e07b9f
+MALLOC: requested size: 64 
+MALLOC: returning block: 0x105e07bc4
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e07c1c
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e07c3b
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e07c5b
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e07cdb
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e07cfb
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e07d1c
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e07d3c
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e07d5d
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e07d7b
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e07db3
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e07dd1
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e07df0
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e07e0a
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e07e2e
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e07e53
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e07e6d
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e07e8e
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e07eb0
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e07eca
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e07ee6
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e07f03
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e07f1e
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e07f3a
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e07f55
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e07f72
+MALLOC: requested size: 15 
+MALLOC: returning block: 0x105e07f90
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e07fb7
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e07fda
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e07ffe
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0801b
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e08039
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e08056
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e08074
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e0808f
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e080ab
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e080c6
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e080e2
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e080ff
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0811d
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e0813b
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e08157
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e08174
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0818f
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e081aa
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e081c6
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e081e3
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e081fe
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0821e
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e0823f
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e08261
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e08284
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0829f
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e082ba
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e082d6
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e082f1
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e08310
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e08330
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e0834b
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e08367
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e08381
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e083a0
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e083c0
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e083db
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e083fe
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e08422
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e08444
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e08465
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e08487
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e084a8
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e08528
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e08547
+MALLOC: requested size: 25 
+MALLOC: returning block: 0x105e08569
+MALLOC: requested size: 14 
+MALLOC: returning block: 0x105e0859a
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e085c0
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e085e8
+MALLOC: requested size: 14 
+MALLOC: returning block: 0x105e0860d
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e08633
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e08655
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e08677
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0869a
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e086bd
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e086dd
+MALLOC: requested size: 8800 
+MALLOC: returning block: 0x105e086fa
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0a972
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e0a990
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0a9ad
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e0a9cb
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0a9e8
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e0aa06
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e0aa22
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aa3e
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aa5e
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aa7e
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aa9e
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aabe
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aade
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aafe
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0ab1e
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0ab3e
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0ab5e
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0ab7f
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0aba0
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0abc1
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0abe2
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0ac03
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0ac24
+FREE: 0x105e07bdc
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0ac45
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0ac65
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0ac86
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e0aca4
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0ad24
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e0ad3f
+MALLOC: requested size: 20 
+MALLOC: returning block: 0x105e0ad63
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0ad8f
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0adb0
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0adcb
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0adeb
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0ae06
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e0ae27
+MALLOC: requested size: 14 
+MALLOC: returning block: 0x105e0ae41
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0ae67
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0ae8a
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0aea8
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e0aec8
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e0aee7
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0af09
+MALLOC: requested size: 35 
+MALLOC: returning block: 0x105e0af2c
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0af67
+MALLOC: requested size: 51 
+MALLOC: returning block: 0x105e0af87
+MALLOC: requested size: 28 
+MALLOC: returning block: 0x105e0afd2
+MALLOC: requested size: 50 
+MALLOC: returning block: 0x105e0b006
+MALLOC: requested size: 22 
+MALLOC: returning block: 0x105e0b050
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e0b07e
+MALLOC: requested size: 17 
+MALLOC: returning block: 0x105e0b09d
+MALLOC: requested size: 45 
+MALLOC: returning block: 0x105e0b0c6
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e0b10b
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e0b128
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0b160
+MALLOC: requested size: 14 
+MALLOC: returning block: 0x105e0b17e
+MALLOC: requested size: 15 
+MALLOC: returning block: 0x105e0b1a4
+MALLOC: requested size: 28 
+MALLOC: returning block: 0x105e0b1cb
+MALLOC: requested size: 14 
+MALLOC: returning block: 0x105e0b1ff
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e0b225
+MALLOC: requested size: 15 
+MALLOC: returning block: 0x105e0b247
+MALLOC: requested size: 53 
+MALLOC: returning block: 0x105e0b26e
+MALLOC: requested size: 25 
+MALLOC: returning block: 0x105e0b2bb
+MALLOC: requested size: 15 
+MALLOC: returning block: 0x105e0b2ec
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0b313
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0b336
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e0b351
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0b370
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0b38e
+MALLOC: requested size: 30 
+MALLOC: returning block: 0x105e0b3ac
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0b3e2
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e0b402
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e0b41c
+MALLOC: requested size: 24 
+MALLOC: returning block: 0x105e0b43e
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0b46e
+MALLOC: requested size: 252 
+MALLOC: returning block: 0x105e0b48c
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0b5a0
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0b5bb
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e0b5dc
+MALLOC: requested size: 8800 
+MALLOC: returning block: 0x105e0b5f9
+MALLOC: requested size: 84 
+MALLOC: returning block: 0x105e0d871
+MALLOC: requested size: 15 
+MALLOC: returning block: 0x105e0d8dd
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0d904
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0d925
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e0d948
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0d965
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e0d988
+MALLOC: requested size: 18 
+MALLOC: returning block: 0x105e0d9a5
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0d9cf
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0d9ea
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0da0d
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e0da2b
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e0da4a
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0da65
+MALLOC: requested size: 21 
+MALLOC: returning block: 0x105e0da83
+MALLOC: requested size: 21 
+MALLOC: returning block: 0x105e0dab0
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e0dadd
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0dafc
+MALLOC: requested size: 17 
+MALLOC: returning block: 0x105e0db1c
+MALLOC: requested size: 18 
+MALLOC: returning block: 0x105e0db45
+MALLOC: requested size: 45 
+MALLOC: returning block: 0x105e0db6f
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0dbb4
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e0dbd2
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0dbee
+MALLOC: requested size: 1016 
+MALLOC: returning block: 0x105e0dc0f
+FREE: 0x105e0acbc
+MALLOC: requested size: 14 
+MALLOC: returning block: 0x105e0e01f
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e0e045
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e0e067
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e0e086
+MALLOC: requested size: 4800 
+MALLOC: returning block: 0x105e0e0ab
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0f383
+MALLOC: requested size: 19 
+MALLOC: returning block: 0x105e0f3a3
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e0f3ce
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0f3ed
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e0f410
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e0f433
+FREE: 0x105e0f44b
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e0f454
+FREE: 0x105e0f46c
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e0f433
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e0f478
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e0fc90
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e0fcad
+MALLOC: requested size: 256 
+MALLOC: returning block: 0x105e0fccb
+MALLOC: requested size: 256 
+MALLOC: returning block: 0x105e0fde3
+MALLOC: requested size: 256 
+MALLOC: returning block: 0x105e0fefb
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e10013
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e10031
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1004e
+MALLOC: requested size: 4096 
+MALLOC: returning block: 0x105e1006c
+MALLOC: requested size: 96 
+MALLOC: returning block: 0x105e11084
+MALLOC: requested size: 60 
+MALLOC: returning block: 0x105e110fc
+MALLOC: requested size: 426 
+MALLOC: returning block: 0x105e11150
+MALLOC: requested size: 14 
+MALLOC: returning block: 0x105e11312
+REALLOC: 0x105e1132a 12 
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e11338
+MALLOC: requested size: 96 
+MALLOC: returning block: 0x105e1135a
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e113d2
+FREE: 0x105e113ea
+MALLOC: requested size: 24 
+MALLOC: returning block: 0x105e113f4
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e113d2
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e11424
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e114bc
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e11554
+MALLOC: requested size: 96 
+MALLOC: returning block: 0x105e11576
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e115ee
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e11609
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e11626
+FREE: 0x105e1163e
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e11626
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e11648
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e116c8
+MALLOC: requested size: 176 
+MALLOC: returning block: 0x105e116f0
+FREE: 0x105e116e0
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e116c8
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e117b8
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e11838
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e11855
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e11870
+FREE: 0x105e11888
+FREE: 0x105e1186d
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e11855
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e1188b
+MALLOC: requested size: 96 
+MALLOC: returning block: 0x105e118ad
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e11925
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e11940
+FREE: 0x105e11958
+FREE: 0x105e1193d
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e1195b
+FREE: 0x105e11973
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1195b
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1197d
+FREE: 0x105e11995
+FREE: 0x105e11973
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1195b
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e1199a
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e119b5
+FREE: 0x105e119cd
+FREE: 0x105e119b2
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e119d0
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e119ed
+FREE: 0x105e11a05
+FREE: 0x105e119e8
+MALLOC: requested size: 21 
+MALLOC: returning block: 0x105e11a0a
+MALLOC: requested size: 22 
+MALLOC: returning block: 0x105e11a37
+MALLOC: requested size: 112 
+MALLOC: returning block: 0x105e11a65
+MALLOC: requested size: 256 
+MALLOC: returning block: 0x105e11aed
+REALLOC: 0x0 216 
+MALLOC: requested size: 216 
+MALLOC: returning block: 0x105e11c05
+MALLOC: requested size: 336 
+MALLOC: returning block: 0x105e11cf5
+CALLOC: 16 32 
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e11e5d
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e12075
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e120ad
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e120c5
+MALLOC: requested size: 968 
+MALLOC: returning block: 0x105e120fd
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e120ad
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e124dd
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e124f5
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e124dd
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e1252d
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e12545
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e1257d
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e125b5
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e125cd
+MALLOC: requested size: 84 
+MALLOC: returning block: 0x105e12605
+MALLOC: requested size: 84 
+MALLOC: returning block: 0x105e12671
+MALLOC: requested size: 336 
+MALLOC: returning block: 0x105e126dd
+MALLOC: requested size: 336 
+MALLOC: returning block: 0x105e12845
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e129ad
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e129c9
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e129e5
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e12a01
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e12a1d
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e12a39
+CALLOC: 88 1 
+MALLOC: requested size: 88 
+MALLOC: returning block: 0x105e12a55
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e12ac5
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e12ae1
+REALLOC: 0x0 16 
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e12afd
+FREE: 0x105e12a51
+FREE: 0x105e12115
+FREE: 0x105e12689
+FREE: 0x0
+FREE: 0x0
+MALLOC: requested size: 1864 
+MALLOC: returning block: 0x105e12b25
+REALLOC: 0x0 128 
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e13285
+REALLOC: 0x0 128 
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e1331d
+MALLOC: requested size: 1864 
+MALLOC: returning block: 0x105e133b5
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e13b15
+MALLOC: requested size: 144 
+MALLOC: returning block: 0x105e13bad
+FREE: 0x105e13b2d
+FREE: 0x105e13bc5
+FREE: 0x0
+FREE: 0x105e133cd
+MALLOC: requested size: 160 
+MALLOC: returning block: 0x105e13c55
+MALLOC: requested size: 48 
+MALLOC: returning block: 0x105e13b15
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e13d0d
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e13d2e
+MALLOC: requested size: 216 
+MALLOC: returning block: 0x105e13d96
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e13e86
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e13eae
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e13ed6
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e13efe
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e13f26
+REALLOC: 0x0 80 
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e13f4e
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e13fb6
+FREE: 0x105e13c6d
+FREE: 0x105e13b2d
+FREE: 0x105e13d46
+FREE: 0x105e13d25
+MALLOC: requested size: 20 
+MALLOC: returning block: 0x105e13fde
+MALLOC: requested size: 112 
+MALLOC: returning block: 0x105e1400a
+MALLOC: requested size: 256 
+MALLOC: returning block: 0x105e14092
+REALLOC: 0x0 216 
+MALLOC: requested size: 216 
+MALLOC: returning block: 0x105e141aa
+MALLOC: requested size: 320 
+MALLOC: returning block: 0x105e1429a
+CALLOC: 16 32 
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e143f2
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e1460a
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e14642
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e1465a
+MALLOC: requested size: 968 
+MALLOC: returning block: 0x105e14692
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e14642
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e14a72
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e14a8a
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e14a72
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e14ac2
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e14ada
+CALLOC: 32 1 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e14b12
+CALLOC: 56 1 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e14b4a
+FREE: 0x0
+FREE: 0x0
+FREE: 0x105e14b62
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e14b9a
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e14c02
+MALLOC: requested size: 320 
+MALLOC: returning block: 0x105e14c6a
+MALLOC: requested size: 320 
+MALLOC: returning block: 0x105e14dc2
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e14f1a
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e14f36
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e14f52
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e14f6e
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e14f8a
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e14fa6
+CALLOC: 88 1 
+MALLOC: requested size: 88 
+MALLOC: returning block: 0x105e14fc2
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e15032
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1504e
+REALLOC: 0x0 16 
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e1506a
+FREE: 0x105e14fbe
+FREE: 0x105e146aa
+FREE: 0x105e14c1a
+FREE: 0x0
+FREE: 0x0
+MALLOC: requested size: 1864 
+MALLOC: returning block: 0x105e15092
+REALLOC: 0x0 128 
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e157f2
+REALLOC: 0x0 128 
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e1588a
+MALLOC: requested size: 1864 
+MALLOC: returning block: 0x105e15922
+MALLOC: requested size: 128 
+MALLOC: returning block: 0x105e16082
+MALLOC: requested size: 144 
+MALLOC: returning block: 0x105e1611a
+FREE: 0x105e1609a
+FREE: 0x105e16132
+FREE: 0x0
+FREE: 0x105e1593a
+MALLOC: requested size: 160 
+MALLOC: returning block: 0x105e161c2
+MALLOC: requested size: 48 
+MALLOC: returning block: 0x105e16082
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1627a
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e1629b
+MALLOC: requested size: 216 
+MALLOC: returning block: 0x105e16303
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e163f3
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e1641b
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e16443
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e1646b
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e16493
+REALLOC: 0x0 80 
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e164bb
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e16523
+FREE: 0x105e161da
+FREE: 0x105e1609a
+FREE: 0x105e162b3
+FREE: 0x105e16292
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1654b
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e16567
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e16584
+FREE: 0x105e1659c
+FREE: 0x105e1657f
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e16567
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e165a1
+FREE: 0x105e165b9
+FREE: 0x105e1657f
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e16567
+FREE: 0x105e11850
+FREE: 0x105e1657f
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e16567
+FREE: 0x105e116e0
+FREE: 0x105e117d0
+FREE: 0x105e1657f
+FREE: 0x105e11168
+FREE: 0x105e113ea
+FREE: 0x105e1140c
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e165be
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e165a1
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e165fe
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1661d
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e1663d
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e1665c
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e16684
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e166a3
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e166c2
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e166df
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e16702
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e16726
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e16743
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e16766
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e16786
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e167a6
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e167c4
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e167e3
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e16800
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e16821
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e16841
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1685e
+MALLOC: requested size: 8800 
+MALLOC: returning block: 0x105e1687e
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e18af6
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e18b15
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e18b35
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e18b51
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e18b73
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e18b91
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e18bb1
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e18bce
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e18bed
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e18c0e
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e18c2c
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e18c4b
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e18c6d
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e18c8f
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e18cac
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e18ccc
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e18cec
+MALLOC: requested size: 1016 
+MALLOC: returning block: 0x105e18d0d
+FREE: 0x105e11660
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1911d
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1913e
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1915f
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e1917c
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e191a1
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e191c5
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e191e3
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e19206
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e19226
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e19247
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e19266
+MALLOC: requested size: 672 
+MALLOC: returning block: 0x105e19287
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1953f
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e1955d
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e195dd
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e19600
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e1961e
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1963d
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1965a
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e19677
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e19698
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e196b9
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e196db
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e196fb
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e19718
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e19737
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e19756
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e19775
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e19792
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e197b1
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e197d0
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e197f8
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e19815
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e19831
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e19851
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e19871
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e19895
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e198b4
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e198d4
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e198f2
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e19912
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e19933
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e19950
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e19970
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1998f
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e199af
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e199d0
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e199f2
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e19a14
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e19a37
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e19a54
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e19a74
+MALLOC: requested size: 1016 
+MALLOC: returning block: 0x105e19a91
+FREE: 0x105e19575
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e19ea1
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e19ec1
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e19ee3
+FREE: 0x105e1929f
+MALLOC: requested size: 448 
+MALLOC: returning block: 0x105e19f04
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1a0dc
+MALLOC: requested size: 11 
+MALLOC: returning block: 0x105e1a0fa
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1a11d
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1a13a
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1a157
+MALLOC: requested size: 5 
+MALLOC: returning block: 0x105e1a175
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e1a192
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1a1b1
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e1a1cd
+MALLOC: requested size: 8800 
+MALLOC: returning block: 0x105e1a1f1
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e1c469
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1c48d
+MALLOC: requested size: 4800 
+MALLOC: returning block: 0x105e1c4a9
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1d781
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1d7a1
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e1d7bf
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e1d7e1
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1d806
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1d827
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1d847
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1d865
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1d886
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1d8a2
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1d8c0
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1d8dc
+MALLOC: requested size: 6 
+MALLOC: returning block: 0x105e1d8fd
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1d91b
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1d937
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e1d957
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1d979
+FREE: 0x105e19f1c
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e1d99a
+MALLOC: requested size: 9 
+MALLOC: returning block: 0x105e1d9d2
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1d9f3
+FREE: 0x105e1d9b2
+FREE: 0x105e191fb
+FREE: 0x105e1923e
+FREE: 0x105e07e08
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e1d99a
+FREE: 0x105e07ec8
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e1da13
+MALLOC: requested size: 272 
+MALLOC: returning block: 0x105e1da2e
+MALLOC: requested size: 46 
+MALLOC: returning block: 0x105e1db56
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e1db9c
+FREE: 0x105e1dbb4
+MALLOC: requested size: 15 
+MALLOC: returning block: 0x105e1db9c
+MALLOC: requested size: 2 
+MALLOC: returning block: 0x105e1dbdc
+FREE: 0x105e0837f
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e1dbf6
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e1dc11
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e1de29
+FREE: 0x105e1de41
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e1de4b
+MALLOC: requested size: 3 
+MALLOC: returning block: 0x105e1de29
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e1de73
+REALLOC: 0x105e1de8b 6 
+REALLOC: 0x0 16 
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e1e08b
+REALLOC: 0x0 8 
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1e0b3
+REALLOC: 0x0 4 
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e1e0d3
+REALLOC: 0x0 8 
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e1e0ef
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e1e10f
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e1e927
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e1e967
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e1e9cf
+REALLOC: 0x105e13f66 160 
+MALLOC: requested size: 160 
+MALLOC: returning block: 0x105e1ea37
+FREE: 0x105e13f66
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e1eaef
+FREE: 0x105e1e93f
+FREE: 0x105e1e97f
+FREE: 0x105e1e9e7
+REALLOC: 0x105e1e0a3 32 
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e1e9cf
+FREE: 0x105e1e0a3
+REALLOC: 0x105e1e0cb 24 
+MALLOC: requested size: 24 
+MALLOC: returning block: 0x105e1eaef
+FREE: 0x105e1e0cb
+REALLOC: 0x105e1e0eb 12 
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e1eb27
+FREE: 0x105e1e0eb
+REALLOC: 0x105e1e107 24 
+MALLOC: requested size: 24 
+MALLOC: returning block: 0x105e1eb4b
+FREE: 0x105e1e107
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e1eb7b
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e1f393
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e1f3d3
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e1f43b
+REALLOC: 0x105e1ea67 320 
+MALLOC: requested size: 320 
+MALLOC: returning block: 0x105e1f4a3
+FREE: 0x105e1ea67
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e1f5fb
+FREE: 0x105e1f3ab
+FREE: 0x105e1f3eb
+FREE: 0x105e1f453
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e1f633
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e1fe4b
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e1fe8b
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e1fef3
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e1ff5b
+REALLOC: 0x105e1f4d3 560 
+MALLOC: requested size: 560 
+MALLOC: returning block: 0x105e1ff74
+FREE: 0x105e1f4d3
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e201bc
+FREE: 0x105e1fe63
+FREE: 0x105e1fea3
+FREE: 0x105e1ff0b
+REALLOC: 0x105e1e9ff 64 
+REALLOC: 0x105e1eb1f 56 
+REALLOC: 0x105e1eb57 28 
+REALLOC: 0x105e1eb7b 56 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e201f4
+FREE: 0x105e1eb7b
+FREE: 0x105e1de41
+FREE: 0x105e1de63
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e20244
+REALLOC: 0x105e2025c 36 
+FREE: 0x105e1de8b
+0                            0.00
+FREE: 0x105e2025c
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e2045c
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e20484
+MALLOC: requested size: 10 
+MALLOC: returning block: 0x105e204a0
+FREE: 0x105e204b8
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e204c2
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e204ea
+REALLOC: 0x105e20502 6 
+FREE: 0x105e204da
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e204a0
+FREE: 0x105e20502
+FREE: 0x105e2049c
+FREE: 0x105e20474
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e204ea
+REALLOC: 0x105e20502 36 
+FREE: 0x105e204b8
+-1                          -1.00
+FREE: 0x105e20502
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e204ea
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e204a0
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e20702
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e2072a
+REALLOC: 0x105e20742 7 
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e20942
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e2115a
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e211c2
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e2122a
+FREE: 0x105e21172
+FREE: 0x105e211da
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e21243
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e21a5b
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e21ac3
+FREE: 0x105e21a73
+FREE: 0x105e21adb
+FREE: 0x105e2071a
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e21a5b
+FREE: 0x105e20742
+FREE: 0x105e204b8
+FREE: 0x105e20502
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e21b2b
+REALLOC: 0x105e21b43 36 
+FREE: 0x105e21a73
+-12.34                     -12.34
+FREE: 0x105e21b43
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e21a5b
+MALLOC: requested size: 7 
+MALLOC: returning block: 0x105e21b2b
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e21d43
+REALLOC: 0x105e21d5b 10 
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e21f5b
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e22773
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e227b3
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e2281b
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e22883
+FREE: 0x105e2278b
+FREE: 0x105e227cb
+FREE: 0x105e22833
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e228bb
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e230d3
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e23113
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e2317b
+REALLOC: 0x105e1ffa4 880 
+MALLOC: requested size: 880 
+MALLOC: returning block: 0x105e231e3
+FREE: 0x105e1ffa4
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e2356b
+FREE: 0x105e230eb
+FREE: 0x105e2312b
+FREE: 0x105e23193
+REALLOC: 0x105e1e9ff 104 
+REALLOC: 0x105e1eb1f 96 
+REALLOC: 0x105e1eb57 48 
+MALLOC: requested size: 48 
+MALLOC: returning block: 0x105e2317b
+FREE: 0x105e1eb57
+REALLOC: 0x105e20224 96 
+MALLOC: requested size: 96 
+MALLOC: returning block: 0x105e23593
+FREE: 0x105e20224
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e2360b
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e23e23
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e23e63
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e23ecb
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e23f33
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e23f4c
+FREE: 0x105e23e3b
+FREE: 0x105e23e7b
+FREE: 0x105e23ee3
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e23f74
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e2478c
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e247f4
+FREE: 0x105e247a4
+FREE: 0x105e2480c
+FREE: 0x105e21b43
+FREE: 0x105e21a73
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e2485c
+REALLOC: 0x105e24874 36 
+FREE: 0x105e21d5b
+12345                    12345.00
+FREE: 0x105e24874
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e247f4
+MALLOC: requested size: 13 
+MALLOC: returning block: 0x105e24a74
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e24a99
+MALLOC: requested size: 512 
+MALLOC: returning block: 0x105e24ac1
+REALLOC: 0x105e24ad9 12 
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e24cd9
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e254f1
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e25559
+FREE: 0x105e25509
+FREE: 0x105e25571
+REALLOC: 0x0 16 
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e254f1
+REALLOC: 0x0 8 
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e255c1
+REALLOC: 0x0 4 
+MALLOC: requested size: 4 
+MALLOC: returning block: 0x105e255e1
+REALLOC: 0x0 8 
+MALLOC: requested size: 8 
+MALLOC: returning block: 0x105e255fd
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e2561d
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e25e35
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e25e75
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e25edd
+REALLOC: 0x105e164d3 160 
+MALLOC: requested size: 160 
+MALLOC: returning block: 0x105e25f45
+FREE: 0x105e164d3
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e25ffd
+FREE: 0x105e25e4d
+FREE: 0x105e25e8d
+FREE: 0x105e25ef5
+REALLOC: 0x105e25509 32 
+REALLOC: 0x105e255d9 24 
+MALLOC: requested size: 24 
+MALLOC: returning block: 0x105e25edd
+FREE: 0x105e255d9
+REALLOC: 0x105e255f9 12 
+MALLOC: requested size: 12 
+MALLOC: returning block: 0x105e25ffd
+FREE: 0x105e255f9
+REALLOC: 0x105e25615 24 
+MALLOC: requested size: 24 
+MALLOC: returning block: 0x105e26035
+FREE: 0x105e25615
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e26065
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e2687d
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e268bd
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e26925
+REALLOC: 0x105e25f75 320 
+MALLOC: requested size: 320 
+MALLOC: returning block: 0x105e2698d
+FREE: 0x105e25f75
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e26ae5
+FREE: 0x105e26895
+FREE: 0x105e268d5
+FREE: 0x105e2693d
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e26b1d
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e27335
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e27375
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e273dd
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e27445
+REALLOC: 0x105e269bd 560 
+MALLOC: requested size: 560 
+MALLOC: returning block: 0x105e2745e
+FREE: 0x105e269bd
+MALLOC: requested size: 32 
+MALLOC: returning block: 0x105e276a6
+FREE: 0x105e2734d
+FREE: 0x105e2738d
+FREE: 0x105e273f5
+REALLOC: 0x105e25509 64 
+REALLOC: 0x105e25f0d 56 
+REALLOC: 0x105e2602d 28 
+REALLOC: 0x105e26065 56 
+MALLOC: requested size: 56 
+MALLOC: returning block: 0x105e276de
+FREE: 0x105e26065
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e2772e
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e27f46
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e27f86
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e27fc6
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e2802e
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e28096
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e280af
+REALLOC: 0x105e2748e 880 
+MALLOC: requested size: 880 
+MALLOC: returning block: 0x105e280d7
+FREE: 0x105e2748e
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e2845f
+FREE: 0x105e27f5e
+FREE: 0x105e27f9e
+FREE: 0x105e27fde
+FREE: 0x105e28046
+REALLOC: 0x105e25509 104 
+MALLOC: requested size: 104 
+MALLOC: returning block: 0x105e28487
+FREE: 0x105e25509
+REALLOC: 0x105e25f0d 96 
+REALLOC: 0x105e2602d 48 
+REALLOC: 0x105e2770e 96 
+MALLOC: requested size: 96 
+MALLOC: returning block: 0x105e28507
+FREE: 0x105e2770e
+MALLOC: requested size: 2048 
+MALLOC: returning block: 0x105e2857f
+MALLOC: requested size: 40 
+MALLOC: returning block: 0x105e28d97
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e28dd7
+MALLOC: requested size: 80 
+MALLOC: returning block: 0x105e28e3f
+MALLOC: requested size: 1 
+MALLOC: returning block: 0x105e28ea7
+MALLOC: requested size: 16 
+MALLOC: returning block: 0x105e28ec0
+FREE: 0x105e28daf
+FREE: 0x105e28def
+FREE: 0x105e28e57
