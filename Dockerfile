@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
 ENV LANG en_US.utf8
 RUN apt update
 RUN apt install -y git wget build-essential
+ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache 
 RUN cd /home &&\
 	git clone https://github.com/erikleffler/Malloc &&\
 	cd Malloc &&\
