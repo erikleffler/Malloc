@@ -3,7 +3,7 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
     && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
 RUN apt update
-RUN apt install -y git wget gcc make
+RUN apt install -y git wget build-essential
 RUN cd /home &&\
 	git clone https://github.com/erikleffler/Malloc &&\
 	cd Malloc &&\
@@ -14,5 +14,5 @@ RUN cd /home &&\
 	cd gawk-4.2.1 &&\
 	./configure &&\
 	sed -i '152s/$/ \.\.\/malloc.$(OBJEXT)/' Makefile &&\
-	sed -i '525i\.\.\/malloc\.c \\' Makefile &&\
-	make check
+	sed -i '525i\.\.\/malloc\.c \\' Makefile
+

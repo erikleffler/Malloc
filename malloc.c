@@ -1,4 +1,4 @@
-//#include <stdlib.h>
+#include <stdlib.h>
 #include <pthread.h> 
 #include <unistd.h>
 #include <stdio.h>
@@ -15,7 +15,7 @@ void split_block(list_t* block, size_t size);
 
 //#define set_debug
 #ifdef set_debug
-#define debug(...) printf(__VA_ARGS__)
+#define debug(...) printf(__VA_ARGS__); fflush(stdout);
 #define debug_block(fun, block) \
 	printf("%s: debug block\n", fun); \
 	printf("	block:		%p\n", block); \
@@ -23,7 +23,8 @@ void split_block(list_t* block, size_t size);
 	printf("	block->prev:	%p\n", block->prev); \
 	printf("	block->size:	%p\n", block->size); \
 	printf("	block->free:	%p\n", block->free); \
-	printf("	block data:	%p\n\n", ((list_t*)block + 1));
+	printf("	block data:	%p\n\n", ((list_t*)block + 1)); \
+	fflush(stdout);
 #else
 #define debug(...)
 #define debug_block(fun, block)
@@ -47,17 +48,6 @@ void free(void* ptr) {
 	if(!ptr) {
 		return;
 	}
-
-	/*
-	if(ptr > ) {
-		void* callstack[128];
-		int i, frames = backtrace(callstack, 128);
-		char** strs = backtrace_symbols(callstack, frames);
-		for (i = 0; i < frames; ++i) {
-			printf("%s\n", strs[i]);
-		}
-		free(strs);
-	}*/
 
 	list_t* block = ((list_t*)ptr - 1);
 	debug_block("FREE, prior to merge, block", block);
@@ -187,8 +177,8 @@ list_t* allocate_block(list_t* last, size_t size) {
 		return NULL;
 	}
 	if(req != block) {
-		debug("ERROR: sbrk returned different values (thread?): req: %p, block: %p\n", req, block);
-		exit(1);
+		printf("ERROR in malloc in allocate_block: sbrk returned different values (thread?): req: %p, block: %p\n", req, block);
+		return;
 	}
 
 	block->size = size;
