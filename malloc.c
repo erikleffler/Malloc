@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
@@ -12,18 +11,41 @@ void split_block(list_t* block, size_t size);
 
 #define align4(x) (((((x)-1)>>2)<<2) + 4)
 
+
+int in_malloc = 0;
+
+#define error(...) \
+        if(!in_malloc) { \
+                in_malloc = 1; \
+                printf(__VA_ARGS__); \
+                fflush(stdout); \
+                in_malloc = 0; \
+        }
+
 //#define set_debug
 #ifdef set_debug
-#define debug(...) printf(__VA_ARGS__); fflush(stdout);
+
+#define debug(...) \
+        if(!in_malloc) { \
+                in_malloc = 1; \
+                printf(__VA_ARGS__); \
+                fflush(stdout); \
+                in_malloc = 0; \
+        }
+
 #define debug_block(fun, block) \
-	printf("%s: debug block\n", fun); \
-	printf("	block:		%p\n", block); \
-	printf("	block->next:	%p\n", block->next); \
-	printf("	block->prev:	%p\n", block->prev); \
-	printf("	block->size:	%zu\n", block->size); \
-	printf("	block->free:	%d\n", block->free); \
-	printf("	block data:	%p\n\n", ((list_t*)block + 1)); \
-	fflush(stdout);
+        if(!in_malloc) { \
+                in_malloc = 1; \
+                printf("%s: debug block\n", fun); \
+                printf("        block:          %p\n", block); \
+                printf("        block->next:    %p\n", block->next); \
+                printf("        block->prev:    %p\n", block->prev); \
+                printf("        block->size:    %zu\n", block->size); \
+                printf("        block->free:    %d\n", block->free); \
+                printf("        block data:     %p\n\n", ((list_t*)block + 1)); \
+                fflush(stdout); \
+                in_malloc = 0; \
+        }
 #else
 #define debug(...)
 #define debug_block(fun, block)
@@ -89,12 +111,16 @@ void* realloc(void* ptr, size_t size) {
 	
 	if(size > block->size) {
 
-		list_t* new_ptr = malloc(size);
+		void* new_ptr = malloc(size);
 		if(!new_ptr) {
 			return NULL;
 		}
 
-		memcpy(new_ptr, ptr, block->size);
+		// Getting some wierd errors, not going to use library functions in case they call malloc. Hence, the make-shift memcpy.
+		for(int i = 0; i < size; i++) {
+			*((char*)new_ptr + i) = *((char*)ptr + i);
+		}
+
 		free(ptr);
 		debug("REALLOC: return ptr %p\n", ptr);
 		return new_ptr;
@@ -104,10 +130,20 @@ void* realloc(void* ptr, size_t size) {
 }
 
 void* calloc(size_t num_elements, size_t element_size) {
+
 	size_t size = align4(num_elements * element_size);
 	debug("CALLOC: %d %d \n", (int)num_elements, (int)element_size);
 	void* ptr = malloc(size);
-	memset(ptr, 0, size);
+
+	if(!ptr) {
+		return NULL;
+	}
+	
+	// Getting some wierd errors, think that memset might have been using this calloc, resulting in an infinite loop. Hence, make-shift memset
+	for(int i = 0; i < size; i++) {
+			*((char*)ptr + i) = 0;
+	}
+
 	debug("CALLOC: return ptr %p\n", ptr);
 	return ptr;
 }
@@ -169,8 +205,8 @@ list_t* allocate_block(list_t* last, size_t size) {
 		return NULL;
 	}
 	if(req != block) {
-		printf("ERROR in malloc in allocate_block: sbrk returned different values (thread?): req: %p, block: %p\n", req, block);
-		exit(1);
+		error("ERROR in malloc in allocate_block: sbrk returned different values (thread?): req: %p, block: %p\n", req, block);
+		return NULL;
 	}
 
 	block->size = size;
