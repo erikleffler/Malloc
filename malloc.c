@@ -13,7 +13,7 @@ void split_block(list_t* block, size_t size);
 
 #define align4(x) (((((x)-1)>>2)<<2) + 4)
 
-#define set_debug
+//#define set_debug
 #ifdef set_debug
 #define debug(...) printf(__VA_ARGS__)
 #define debug_block(fun, block) \
@@ -140,7 +140,6 @@ void* malloc(size_t size) {
 		if(!block) {
 			block = allocate_block(last, size);
 			if(!block) {
-
 
 				debug("MALLOC: returning null w base\n");
 				list_t* current = base;
