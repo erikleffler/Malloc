@@ -9,33 +9,36 @@ list_t* allocate_block(list_t* last, size_t size);
 list_t* find_block(list_t** last, size_t size);
 void split_block(list_t* block, size_t size);
 
-#define align4(x) (((((x)-1)>>2)<<2) + 4)
+#define align8(num) \
+    (((num) + ((8) - 1)) & ~((8) - 1))
+
+#define min(x, y) x < y ? x : y;
 
 
-int in_malloc = 0;
+int print_in_malloc = 0;
 
 #define error(...) \
-        if(!in_malloc) { \
-                in_malloc = 1; \
+        if(!print_in_malloc) { \
+                print_in_malloc = 1; \
                 printf(__VA_ARGS__); \
                 fflush(stdout); \
-                in_malloc = 0; \
+                print_in_malloc = 0; \
         }
 
 //#define set_debug
 #ifdef set_debug
 
 #define debug(...) \
-        if(!in_malloc) { \
-                in_malloc = 1; \
+        if(!print_in_malloc) { \
+                print_in_malloc = 1; \
                 printf(__VA_ARGS__); \
                 fflush(stdout); \
-                in_malloc = 0; \
+                print_in_malloc = 0; \
         }
 
 #define debug_block(fun, block) \
-        if(!in_malloc) { \
-                in_malloc = 1; \
+        if(!print_in_malloc) { \
+                print_in_malloc = 1; \
                 printf("%s: debug block\n", fun); \
                 printf("        block:          %p\n", block); \
                 printf("        block->next:    %p\n", block->next); \
@@ -44,7 +47,7 @@ int in_malloc = 0;
                 printf("        block->free:    %d\n", block->free); \
                 printf("        block data:     %p\n\n", ((list_t*)block + 1)); \
                 fflush(stdout); \
-                in_malloc = 0; \
+                print_in_malloc = 0; \
         }
 #else
 #define debug(...)
@@ -106,32 +109,35 @@ void* realloc(void* ptr, size_t size) {
 	if(!ptr) {
 		return malloc(size);
 	}
-
-	list_t* block = ((list_t*)ptr - 1);
 	
-	if(size > block->size) {
+	void * new_ptr;
+	if(size) {
 
-		void* new_ptr = malloc(size);
+		list_t* block = ((list_t*)ptr - 1);
+
+		new_ptr = malloc(size);
+
 		if(!new_ptr) {
+			debug("REALLOC: failed with size: %zu\n", size)
 			return NULL;
 		}
 
 		// Getting some wierd errors, not going to use library functions in case they call malloc. Hence, the make-shift memcpy.
-		for(int i = 0; i < size; i++) {
-			*((char*)new_ptr + i) = *((char*)ptr + i);
+		int min_size = min(align8(size), block->size);
+		for(int i = 0; i < min_size; i++) {
+			((char*)new_ptr)[i] = ((char*)ptr)[i];
 		}
 
-		free(ptr);
-		debug("REALLOC: return ptr %p\n", ptr);
-		return new_ptr;
+		debug("REALLOC: return ptr %p\n", new_ptr);
+
 	}
-	debug("REALLOC: return ptr %p\n", ptr);
-	return ptr;
+	free(ptr);
+	return new_ptr;
 }
 
 void* calloc(size_t num_elements, size_t element_size) {
 
-	size_t size = align4(num_elements * element_size);
+	size_t size = align8(num_elements * element_size);
 	debug("CALLOC: %d %d \n", (int)num_elements, (int)element_size);
 	void* ptr = malloc(size);
 
@@ -150,7 +156,7 @@ void* calloc(size_t num_elements, size_t element_size) {
 
 void* malloc(size_t size) {
 
-	size = align4(size);
+	size = align8(size);
 	debug("MALLOC: requested size: %zu \n", size);
 
 	list_t* block;
@@ -199,7 +205,7 @@ void* malloc(size_t size) {
 list_t* allocate_block(list_t* last, size_t size) {
 
 	list_t* block = sbrk(0);
-	
+
 	list_t* req = sbrk(sizeof(struct list_t) + size);
 	if(req == (void*) - 1) {
 		return NULL;
