@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <pthread.h> 
 #include <unistd.h>
 #include <stdio.h>
 #include <string.h>
@@ -21,8 +20,8 @@ void split_block(list_t* block, size_t size);
 	printf("	block:		%p\n", block); \
 	printf("	block->next:	%p\n", block->next); \
 	printf("	block->prev:	%p\n", block->prev); \
-	printf("	block->size:	%p\n", block->size); \
-	printf("	block->free:	%p\n", block->free); \
+	printf("	block->size:	%zu\n", block->size); \
+	printf("	block->free:	%d\n", block->free); \
 	printf("	block data:	%p\n\n", ((list_t*)block + 1)); \
 	fflush(stdout);
 #else
@@ -39,10 +38,8 @@ struct list_t {
 
 list_t* base = NULL;
 
-pthread_mutex_t free_list_lock;
 
 void free(void* ptr) {
-	pthread_mutex_lock(&free_list_lock);
 	debug("FREE: %p\n", ptr);
 
 	if(!ptr) {
@@ -78,7 +75,6 @@ void free(void* ptr) {
 	}
 	block->free = 1; 
 
-	pthread_mutex_unlock(&free_list_lock);
 	return;
 }
 
@@ -118,9 +114,8 @@ void* calloc(size_t num_elements, size_t element_size) {
 
 void* malloc(size_t size) {
 
-	pthread_mutex_lock(&free_list_lock);
 	size = align4(size);
-	debug("MALLOC: requested size: %d \n", (int)size);
+	debug("MALLOC: requested size: %zu \n", size);
 
 	list_t* block;
 	if(base) {
@@ -142,7 +137,6 @@ void* malloc(size_t size) {
 				debug("base: %p\n", base);
 				debug("sbrk(0): %p\n", sbrk(0));
 
-				pthread_mutex_unlock(&free_list_lock);
 				return NULL;
 			}
 		}
@@ -152,7 +146,6 @@ void* malloc(size_t size) {
 		block = allocate_block(NULL, size);
 		if(!block) {
 			debug("MALLOC: returning null no base\n");
-			pthread_mutex_unlock(&free_list_lock);
 			return NULL;
 		}
 		base = block;
@@ -161,7 +154,6 @@ void* malloc(size_t size) {
 	block->free = 0;
 	debug_block("MALLOC, post, block", block);
 
-	pthread_mutex_unlock(&free_list_lock);
 	return (block + 1);
 }
 
@@ -178,7 +170,7 @@ list_t* allocate_block(list_t* last, size_t size) {
 	}
 	if(req != block) {
 		printf("ERROR in malloc in allocate_block: sbrk returned different values (thread?): req: %p, block: %p\n", req, block);
-		return;
+		exit(1);
 	}
 
 	block->size = size;
