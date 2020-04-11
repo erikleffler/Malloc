@@ -15,5 +15,6 @@ RUN cd /root &&\
 	cd gawk-4.2.1 &&\
 	./configure &&\
 	sed -i '152s/$/ \.\.\/malloc.$(OBJEXT)/' Makefile &&\
-	sed -i '525i\.\.\/malloc\.c \\' Makefile
+	sed -i '525i\.\.\/malloc\.c \\' Makefile &&\
+	make check
 
