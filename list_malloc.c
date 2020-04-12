@@ -228,34 +228,13 @@ void* malloc(size_t size) {
 
 // Request new memeory and if successfull, create a
 // new block (entry in free list).
+// As the program break is initiated on a page boundary (i.e algined),
+// the list_t struct is aligned and we align any requested size, the
+// pointers from here will always be aligned.
 list_t* allocate_block(list_t* last, size_t size) {
 
-	list_t* block = sbrk(0); // Current end of dynamic memory, will be start of block
-
-	// Maybe we need to align the memory at the first sbrk.
-	// Since the list_t struct is aligned aswell as every allocated size,
-	// we shouldn't need to do this if it isn't the first block (in that case
-	// something is prob broken).
-	list_t* req;
-	if(!last && (size_t)block % ALIGN_REQ) {
-
-		size_t padding = align_to_req((size_t)block) - (size_t)(block);
-		req = sbrk(padding);
-		if(req == (void*) - 1) { // Error retval of sbrk
-			error("ERROR in malloc in allocate_block: sbrk can't allocate padding to align allocation\n");
-			return NULL;
-		}
-		block = (list_t*)((char*)block + padding);
-	}
-
-	req = sbrk(sizeof(struct list_t) + size);
-	if(req == (void*) - 1) { // Error retval of sbrk
-		return NULL;
-	}
-
-	// Idk maybe not thread safe
-	if(req != block) {
-		error("ERROR in malloc in allocate_block: sbrk returned different values (thread?): req: %p, block: %p\n", req, block);
+	list_t* block = sbrk(sizeof(struct list_t) + size);
+	if(block == (void*) - 1) { // Error retval of sbrk
 		return NULL;
 	}
 
