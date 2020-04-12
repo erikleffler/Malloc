@@ -3,16 +3,15 @@
 #include <string.h>
 #include "list_malloc.h"
 
-typedef struct list_t list_t;
 
-list_t* allocate_block(list_t* last, size_t size);
-list_t* find_block(list_t** last, size_t size);
-void split_block(list_t* block, size_t size);
+// The glibc malloc aligns memory to 16 bytes on 64 bit and 8 bytes on 32 bit.
+// This is exactly sizeof(size_t) * 2.
+#define ALIGN_REQ (sizeof(size_t) << 1)
 
-#define align8(num) \
-    (((num) + ((8) - 1)) & ~((8) - 1))
+#define align_to_req(num) \
+    (((num) + ((ALIGN_REQ) - 1)) & ~((ALIGN_REQ) - 1))
 
-#define min(x, y) x < y ? x : y;
+#define min(x, y) (x < y ? x : y);
 
 
 // Dont want to recursively call printf since printf will use this malloc (sometimes?)
@@ -56,12 +55,22 @@ int print_in_malloc = 0;
 #define debug_block(fun, block)
 #endif
 
+
+typedef struct list_t list_t;
+
 struct list_t {
 	list_t* next;
 	list_t* prev;
 	size_t size; 
 	int free;
-};
+} __attribute__ ((aligned (ALIGN_REQ)));
+
+
+list_t* allocate_block(list_t* last, size_t size);
+list_t* find_block(list_t** last, size_t size);
+void split_block(list_t* block, size_t size);
+
+
 
 list_t* base = NULL;
 
@@ -123,7 +132,7 @@ void free(void* ptr) {
 void* realloc(void* ptr, size_t size) {
 	debug("REALLOC: %p %d \n", ptr, (int)size);
 
-	size = align8(size);
+	size = align_to_req(size);
 
 	if(!ptr) {
 		return malloc(size);
@@ -156,7 +165,7 @@ void* realloc(void* ptr, size_t size) {
 
 void* calloc(size_t num_elements, size_t element_size) {
 
-	size_t size = align8(num_elements * element_size);
+	size_t size = align_to_req(num_elements * element_size);
 	debug("CALLOC: %d %d \n", (int)num_elements, (int)element_size);
 	void* ptr = malloc(size);
 
@@ -175,7 +184,7 @@ void* calloc(size_t num_elements, size_t element_size) {
 
 void* malloc(size_t size) {
 
-	size = align8(size);
+	size = align_to_req(size);
 	debug("MALLOC: requested size: %zu \n", size);
 
 	list_t* block;
@@ -223,7 +232,23 @@ list_t* allocate_block(list_t* last, size_t size) {
 
 	list_t* block = sbrk(0); // Current end of dynamic memory, will be start of block
 
-	list_t* req = sbrk(sizeof(struct list_t) + size);
+	// Maybe we need to align the memory at the first sbrk.
+	// Since the list_t struct is aligned aswell as every allocated size,
+	// we shouldn't need to do this if it isn't the first block (in that case
+	// something is prob broken).
+	list_t* req;
+	if(!last && (size_t)block % ALIGN_REQ) {
+
+		size_t padding = align_to_req((size_t)block) - (size_t)(block);
+		req = sbrk(padding);
+		if(req == (void*) - 1) { // Error retval of sbrk
+			error("ERROR in malloc in allocate_block: sbrk can't allocate padding to align allocation\n");
+			return NULL;
+		}
+		block = (list_t*)((char*)block + padding);
+	}
+
+	req = sbrk(sizeof(struct list_t) + size);
 	if(req == (void*) - 1) { // Error retval of sbrk
 		return NULL;
 	}
