@@ -1,7 +1,7 @@
 #include <stddef.h>
 
-#ifndef _LIST_MALLOC_H
-#define _LIST_MALLOC_H
+#ifndef _BUDDY_MALLOC_H
+#define _BUDDY_MALLOC_H
 
 void free(void* ptr);
 void* realloc(void* ptr, size_t size);

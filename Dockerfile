@@ -5,7 +5,7 @@ RUN apt-get update &&\
 	localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
 RUN apt update &&\
-	apt install -y git wget build-essential libgmp3-dev libmpc-dev libreadline-dev &&\
+	apt install -y git wget build-essential libgmp3-dev libmpc-dev libreadline-dev vim gdb &&\
 	cd /root &&\
 	wget http://ftp.gnu.org/gnu/gawk/gawk-4.2.1.tar.gz &&\
 	gunzip gawk-4.2.1.tar.gz &&\

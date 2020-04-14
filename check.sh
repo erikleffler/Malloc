@@ -2,7 +2,9 @@
 
 # ONLY TO BE EXECUTED IN DOCKER CONTAINER
 cd /root/gawk-4.2.1
-sed -i 's/version\.\$(OBJEXT)/list_malloc\.\$(OBJEXT) version\.\$(OBJEXT)/' Makefile 
-sed -i 's/version\.c/list_malloc\.c \\\n	version\.c/' Makefile
+#sed -i 's/version\.\$(OBJEXT)/list_malloc\.\$(OBJEXT) version\.\$(OBJEXT)/' Makefile 
+#sed -i 's/version\.c/list_malloc\.c \\\n	version\.c/' Makefile
+sed -i 's/version\.\$(OBJEXT)/buddy_malloc\.\$(OBJEXT) version\.\$(OBJEXT)/' Makefile 
+sed -i 's/version\.c/buddy_malloc\.c \\\n	version\.c/' Makefile
 make check
 
