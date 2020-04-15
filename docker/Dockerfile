@@ -19,4 +19,4 @@ ADD ./list_malloc.c /root/gawk-4.2.1/list_malloc.c
 ADD ./list_malloc.h /root/gawk-4.2.1/list_malloc.h
 ADD ./buddy_malloc.c /root/gawk-4.2.1/buddy_malloc.c
 ADD ./buddy_malloc.h /root/gawk-4.2.1/buddy_malloc.h
-ADD ./check.sh /root/gawk-4.2.1/check.sh
+ADD ./check_in_docker.sh /root/gawk-4.2.1/check_in_docker.sh
