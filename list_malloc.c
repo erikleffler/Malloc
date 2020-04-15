@@ -1,6 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
-#include <string.h>
 #include "list_malloc.h"
 
 
@@ -14,20 +12,14 @@
 #define min(x, y) (x < y ? x : y);
 
 
+//#define set_debug
+#ifdef set_debug
+
+#include <stdio.h>
+
 // Dont want to recursively call printf since printf will use this malloc (sometimes?)
 // Hence, the printing macros above will not run for mallocs in printf or fflush.
 int print_in_malloc = 0;
-
-#define error(...) \
-        if(!print_in_malloc) { \
-                print_in_malloc = 1; \
-                printf(__VA_ARGS__); \
-                fflush(stdout); \
-                print_in_malloc = 0; \
-        }
-
-//#define set_debug
-#ifdef set_debug
 
 #define debug(...) \
         if(!print_in_malloc) { \
