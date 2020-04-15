@@ -263,8 +263,8 @@ list_t* find_block(list_t** last, size_t size) {
 		current = current->next;
 	}
 
-	if(current && current->size >= (size + sizeof(struct list_t) + 8)) {
-		// 8 as min split size seems good for alignment
+	if(current && current->size >= (size + sizeof(struct list_t) + ALIGN_REQ)) {
+		// ALIGN_REQ as min split size seems good for alignment
 		split_block(current, size);
 	}
 
